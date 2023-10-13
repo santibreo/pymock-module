@@ -3,7 +3,7 @@
 #- https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 [project]
 name = "mock_module"
-version = "0.1.0"
+version = "0.0.5-alpha"
 description = "-"
 authors = [
   {name = "Santiago B. Perez Pita",    email="santibreo@gmail.com"},
@@ -23,8 +23,8 @@ dependencies = []
 dynamic = []
 
 [tool.setuptools.dynamic]
-version = "0.0.3-alpha"
 # dependencies = {file = ["requirements.txt"]}
+# version = {file = ["VERSION"]}
 optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
 
 [tool.setuptools.packages.find]
