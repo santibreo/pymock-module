@@ -3,7 +3,7 @@ test:
 
 .coverage:
 	coverage erase && \
-	coverage run -m pytest --doctest-modules ./tests
+	coverage run -m pytest ./tests
 
 coverage: .coverage
 	coverage report

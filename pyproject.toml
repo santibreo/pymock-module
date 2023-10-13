@@ -2,7 +2,7 @@
 #- https://packaging.python.org/en/latest/specifications/declaring-project-metadata
 #- https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 [project]
-name = "pymock-module"
+name = "mock_module"
 version = "0.1.0"
 description = "-"
 authors = [
@@ -23,7 +23,7 @@ dependencies = []
 dynamic = []
 
 [tool.setuptools.dynamic]
-version = "0.1.0-alpha"
+version = "0.0.3-alpha"
 # dependencies = {file = ["requirements.txt"]}
 optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
 
@@ -96,7 +96,6 @@ exclude_lines = [
 [tool.ruff]
 line-length = 100
 exclude = [
-  'code/tests/required/',
   '__pycache__'
 ]
 extend-ignore = [
