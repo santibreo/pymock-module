@@ -1,4 +1,4 @@
-from py_import_finder import find_imports
+from mock_module import find_imports
 
 
 def test_not_found_modules() -> None:
